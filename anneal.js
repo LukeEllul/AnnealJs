@@ -8,10 +8,11 @@ const anneal = R.curry(function(T, alpha, iter, cost, neighbor, solution){
     let bestSolution = solution;
     let t = T;
     while (t > tMin) {
+        const P = Pacc(t);
         for(let i = 0; i < iter; i++){
-            const newSolution = neighbor(solution);
+            const newSolution = neighbor(bestSolution);
             const newCost = cost(newSolution);
-            const ap = Pacc(T)(oldCost, newCost);
+            const ap = P(oldCost, newCost);
             if(ap > Math.random()){
                 bestSolution = newSolution;
                 oldCost = newCost;
@@ -19,5 +20,5 @@ const anneal = R.curry(function(T, alpha, iter, cost, neighbor, solution){
         }
         t = t*alpha;
     }
-    return {solution, oldCost};
+    return {solution: bestSolution, cost: oldCost};
 });
