@@ -2,7 +2,7 @@ const R = require('ramda');
 
 const Pacc = T => (cOld, cNew) => Math.exp((cOld - cNew) / T);
 
-const anneal = R.curry(function(solution, cost, neighbor, T, alpha, iter){
+const anneal = R.curry(function(T, alpha, iter, cost, neighbor, solution){
     let oldCost = cost(solution);
     const tMin = 0.00001;
     let bestSolution = solution;
