@@ -12,5 +12,8 @@
   },
   "author": "Luke Ellul <ellul.luke@gmail.com>",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/LukeEllul/anneal#readme"
+  "homepage": "https://bitbucket.org/LukeEllul/anneal#readme",
+  "dependencies": {
+    "ramda": "^0.24.1"
+  }
 }
