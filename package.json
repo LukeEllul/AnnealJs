@@ -1,0 +1,16 @@
+{
+  "name": "anneal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "anneal.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://LukeEllul@bitbucket.org/LukeEllul/anneal.git"
+  },
+  "author": "Luke Ellul <ellul.luke@gmail.com>",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/LukeEllul/anneal#readme"
+}
