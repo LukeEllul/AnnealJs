@@ -22,3 +22,7 @@ const anneal = R.curry(function(T, alpha, iter, cost, neighbor, solution){
     }
     return {solution: bestSolution, cost: oldCost};
 });
+
+module.exports = {
+    anneal
+};
