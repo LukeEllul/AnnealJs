@@ -1,5 +1,5 @@
 # AnnealJs
-Simlated Annealing in Pure JavaScript
+Simulated Annealing in Pure JavaScript
 
 Import anneal function from anneal.js.
 
